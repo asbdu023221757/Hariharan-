@@ -1,5 +1,16 @@
-year =int(input ('Enter a year : '))
-if(year%4==0):
-  print('The given year is leap year')
-else:
-  print('The given year is not a leap year')
+def linearsearchproduct(productlist,
+targetproduct):
+  indices=[]
+
+  for index, product in  enumerate(productlist):
+    if product==targetproduct:
+      indices.append(index)
+
+
+  return indices
+
+#Example usage 
+products=["shoes","boot","lofer","shoes","sandal","shoes"]
+target="shoes"
+result=linearsearchproduct(products, target)
+print(result)
